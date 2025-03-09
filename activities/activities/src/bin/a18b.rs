@@ -22,4 +22,28 @@
 // * Print whether the employee may access the building
 //   * Must use a function that utilizes the question mark operator to do this
 
-fn main() {}
+enum Employees {
+    Maintenance_crews,
+    Marketing_department_employees,
+    Managers,
+    Line_supervisors,
+    Kitchen_staff,
+    Assembly_technicians,
+}
+
+struct emp_struct {
+    type_emp: Employees,
+    still: bool,
+}
+
+fn determine(emp: emp_struct) -> Result< (), String > {
+    if (emp.still == True){
+        match emp.Employees{
+            Employees::Maintenance_crews => Ok("yes"),
+        }
+    }
+    
+}
+fn main() {
+
+}
