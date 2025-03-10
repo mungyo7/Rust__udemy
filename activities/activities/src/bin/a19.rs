@@ -12,5 +12,7 @@
 //
 // Notes:
 // * Use a HashMap for the furniture store stock
+use std::collections::HashMap;
+
 
 fn main() {}
