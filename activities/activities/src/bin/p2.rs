@@ -25,4 +25,16 @@
 // * Make your program robust: there are 7 errors & multiple blank lines
 //   present in the data.
 
+#[derive(Debug)]
+struct Contact {
+    id: i64,
+    name: String,
+    email: Option<String>,
+}
+
+#[derive(Debug)]
+struct Records {
+    inner: HashMap<i64, Contact>,
+}
+
 fn main() {}
